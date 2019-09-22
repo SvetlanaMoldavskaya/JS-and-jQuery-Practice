@@ -1,3 +1,4 @@
+$(document).ready(function(){
 console.log("he");
 
 function adder(num1, num2) {
@@ -25,6 +26,16 @@ const toUpper = text => {
 
 toUpper("how dare you?");
 /////////////
-$("button").on("click", function() {
-  $("p").css("opacity", 0);
+$("#button1").on("click", function() {
+  $("#p1").css("opacity", 0);
+});
+
+///////////////////
+
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
 });
